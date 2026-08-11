@@ -54,8 +54,6 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
 .faq-section-standalone .accordion-answer{padding:0 72px 26px 30px}
 .faq-section-standalone .accordion-answer p{font-size:15px}
 
-.contact-card-whatsapp{justify-content:space-between}
-.contact-card-whatsapp>a{font-weight:650;color:var(--navy)}
 .contact-social{justify-content:center;margin-top:30px;padding:18px 24px}
 .contact-social .social-links{justify-content:center}
 .contact-map-wrap{position:relative;margin-top:42px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--ice);min-height:380px}
@@ -75,3 +73,10 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
   .contact-map{height:320px}
   .contact-map-copy{left:14px;right:14px;top:14px}
 }
+
+/* Contact cards: keep phone, email, WhatsApp and service area visually identical */
+.contact-card{justify-content:space-between}
+.contact-card-copy{margin-top:34px}
+.contact-card-copy p{margin:0 0 7px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+.contact-card-copy a,.contact-card-copy strong{display:block;font-size:15px;line-height:1.45;font-weight:650;color:var(--navy);overflow-wrap:anywhere}
+.contact-card-copy a:hover{color:var(--blue)}
