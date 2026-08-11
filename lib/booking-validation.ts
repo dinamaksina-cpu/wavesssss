@@ -41,7 +41,15 @@ export function normalizeEmail(value: string) {
 }
 
 export function normalizePhone(value: string) {
-  const phone = parsePhoneNumberFromString(value.trim(), "CY");
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  // Numbers with an explicit country calling code are validated as international.
+  // Cyprus remains the fallback only for local numbers entered without +<country code>.
+  const phone = trimmed.startsWith("+")
+    ? parsePhoneNumberFromString(trimmed)
+    : parsePhoneNumberFromString(trimmed, "CY");
+
   return phone?.isValid() ? phone.number : null;
 }
 

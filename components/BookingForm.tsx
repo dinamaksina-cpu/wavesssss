@@ -8,7 +8,7 @@ import { validateBookingSubmission, type BookingSubmission } from "@/lib/booking
 import type { Dictionary, Locale } from "@/lib/i18n";
 
 type Contact = { name: string; phone: string; email: string; website: string };
-const emptyContact: Contact = { name: "", phone: "+357 ", email: "", website: "" };
+const emptyContact: Contact = { name: "", phone: "", email: "", website: "" };
 const whatsappBookingBaseUrl = "https://wa.me/35797579867";
 
 function key() { return globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`; }
