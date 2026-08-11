@@ -25,7 +25,7 @@ export function GallerySection({ locale, dict, preview = false }: { locale: Loca
     return () => { document.body.style.overflow = ""; document.removeEventListener("keydown", onKey); };
   }, [active]);
   return <section className="section gallery-section"><div className="container">
-    <div className="gallery-heading"><SectionHeading eyebrow={dict.gallery.eyebrow} title={dict.gallery.title} body={dict.gallery.body} />{preview && <Link className="text-link" href={`/${locale}/gallery`}>{dict.gallery.viewAll}<ArrowRight size={17} /></Link>}</div>
+    {preview && <div className="gallery-heading"><SectionHeading eyebrow={dict.gallery.eyebrow} title={dict.gallery.title} body={dict.gallery.body} /><Link className="text-link" href={`/${locale}/gallery`}>{dict.gallery.viewAll}<ArrowRight size={17} /></Link></div>}
     <div className={`gallery-grid ${preview ? "is-preview" : ""}`}>{items.map((item, index) => <button className="gallery-item" key={item.id} type="button" onClick={() => setActive(index)} aria-label={`${dict.gallery.open}: ${dict.gallery.categories[item.category]}`}>
       <Image src={item.image} alt={dict.gallery.alt[item.category]} fill sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 33vw" unoptimized />
       <span>{dict.gallery.categories[item.category]}</span><Maximize2 aria-hidden="true" />

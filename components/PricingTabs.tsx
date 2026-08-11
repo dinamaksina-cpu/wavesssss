@@ -13,7 +13,7 @@ export function PricingTabs({ locale, dict, compact = false }: { locale: Locale;
   const categories = Object.entries(dict.pricing.categories) as ["all" | PriceCategory, string][];
   const visible = pricing.filter(item => category === "all" || item.category === category).slice(0, compact ? 6 : 99);
   return <section className="section pricing-section"><div className="container">
-    <SectionHeading eyebrow={dict.pricing.eyebrow} title={dict.pricing.title} body={dict.pricing.body} />
+    {compact && <SectionHeading eyebrow={dict.pricing.eyebrow} title={dict.pricing.title} body={dict.pricing.body} />}
     {!compact && <div className="pricing-tabs" role="tablist">{categories.map(([key, label]) => <button key={key} role="tab" aria-selected={category === key} onClick={() => setCategory(key)}>{label}</button>)}</div>}
     <div className="price-list">{visible.map(item => <PriceRow key={item.id} item={item} locale={locale} dict={dict} open={expanded === item.id} onToggle={() => setExpanded(expanded === item.id ? null : item.id)} />)}</div>
     <p className="disclaimer">{dict.pricing.disclaimer}</p>
