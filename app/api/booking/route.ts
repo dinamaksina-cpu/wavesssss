@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { company } from "@/data/company";
 import { validateBookingSubmission, type BookingLocale, type ValidBookingSubmission } from "@/lib/booking-validation";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS = 5;
