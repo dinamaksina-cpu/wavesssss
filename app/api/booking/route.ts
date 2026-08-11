@@ -29,8 +29,8 @@ function customerEmail(data: ValidBookingSubmission) {
   const rows = detailRows(data).slice(1).map(([label, value]) => `<tr><td style="padding:6px 16px 6px 0;color:#617486">${escapeHtml(label)}</td><td style="padding:6px 0;color:#102d45">${escapeHtml(value)}</td></tr>`).join("");
   return {
     subject: copy.subject,
-    text: `${copy.hello} ${data.name},\n\n${copy.received}\n${copy.followup}\n\n${copy.note}\n\nBlue Wave Cleaning\n${company.phone}\n${company.email}`,
-    html: `<div style="font-family:Arial,sans-serif;max-width:620px;margin:auto;color:#102d45"><div style="height:5px;background:#20b8cb;border-radius:8px"></div><h1 style="font-size:26px;color:#073e68">Blue Wave Cleaning</h1><p>${escapeHtml(copy.hello)} ${escapeHtml(data.name)},</p><p><strong>${escapeHtml(copy.received)}</strong></p><p>${escapeHtml(copy.followup)}</p><table style="border-collapse:collapse;margin:24px 0">${rows}</table><p style="padding:14px;background:#eaf8fb;border-radius:10px">${escapeHtml(copy.note)}</p><p>${escapeHtml(company.phone)}<br>${escapeHtml(company.email)}</p></div>`,
+    text: `${copy.hello} ${data.name},\n\n${copy.received}\n${copy.followup}\n\n${copy.note}\n\nBlue Wave Cleaning\n${company.phoneDisplay}\n${company.email}`,
+    html: `<div style="font-family:Arial,sans-serif;max-width:620px;margin:auto;color:#102d45"><div style="height:5px;background:#20b8cb;border-radius:8px"></div><h1 style="font-size:26px;color:#073e68">Blue Wave Cleaning</h1><p>${escapeHtml(copy.hello)} ${escapeHtml(data.name)},</p><p><strong>${escapeHtml(copy.received)}</strong></p><p>${escapeHtml(copy.followup)}</p><table style="border-collapse:collapse;margin:24px 0">${rows}</table><p style="padding:14px;background:#eaf8fb;border-radius:10px">${escapeHtml(copy.note)}</p><p>${escapeHtml(company.phoneDisplay)}<br>${escapeHtml(company.email)}</p></div>`,
   };
 }
 
