@@ -59,6 +59,7 @@ const serviceLabels: Record<ServiceSlug, Record<Locale, string>> = {
   "carpet-cleaning": { en: "Carpet Cleaning Cyprus", uk: "Хімчистка килимів Кіпр", ru: "Химчистка ковров Кипр", el: "Καθαρισμός Χαλιών Κύπρος" },
   "upholstery-cleaning": { en: "Sofa & Upholstery Cleaning Cyprus", uk: "Хімчистка диванів Кіпр", ru: "Химчистка диванов Кипр", el: "Καθαρισμός Καναπέδων Κύπρος" },
   "window-cleaning": { en: "Window Cleaning Cyprus", uk: "Миття вікон Кіпр", ru: "Мойка окон Кипр", el: "Καθαρισμός Παραθύρων Κύπρος" },
+  "specialized-cleaning": { en: "Specialized Cleaning Cyprus", uk: "Спеціалізоване прибирання Кіпр", ru: "Специализированная уборка Кипр", el: "Εξειδικευμένος Καθαρισμός Κύπρος" },
 };
 
 export function getServiceSeo(locale: Locale, slug: ServiceSlug): SeoEntry {
