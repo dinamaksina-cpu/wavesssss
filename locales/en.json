@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Blue Wave Cleaning | Professional Cleaning Services in Cyprus",
-    "description": "Professional cleaning for homes, offices, holiday rentals and interiors in Paphos, Limassol and surrounding areas."
+    "title": "Blue Wave Cleaning | Premium Cleaning Services Cyprus",
+    "description": "Professional home, office and vacation rental cleaning in Paphos, Limassol and surrounding areas."
   },
   "nav": {
     "home": "Home",
@@ -29,7 +29,7 @@
   "hero": {
     "title1": "A Cleaner Space.",
     "title2": "A Better Day.",
-    "body": "Professional cleaning for homes, offices and holiday rentals in Paphos, Limassol and surrounding areas.",
+    "body": "Premium home, office and vacation rental cleaning in Paphos, Limassol and surrounding areas.",
     "trust": [
       "Reliable",
       "Professional",
@@ -37,100 +37,111 @@
     ]
   },
   "services": {
-    "eyebrow": "Professional cleaning services",
-    "title": "Reliable cleaning for homes, rentals and businesses",
-    "body": "Choose the service that fits your property. We tailor the scope to the space, its condition and the result you need.",
+    "eyebrow": "What we care for",
+    "title": "Considered cleaning for every space",
+    "body": "From quiet homes to busy guest turnovers, every service is shaped around the space and the details that matter.",
     "items": [
       {
         "title": "Home Cleaning",
-        "description": "Regular and deep cleaning for apartments, houses and villas, with window cleaning available when needed.",
+        "description": "Regular and deep cleaning for apartments, houses and villas in Paphos, Limassol and surrounding areas.",
         "details": [
           "Regular Cleaning",
           "Deep Cleaning",
-          "Window Cleaning"
+          "Kitchen & Bathrooms",
+          "Floors & Surfaces",
+          "Window Cleaning if required"
         ]
       },
       {
         "title": "Office & Commercial Cleaning",
-        "description": "One-off or regular cleaning for offices and commercial spaces, arranged around the needs of your property.",
+        "description": "One-off or recurring cleaning for offices, shops and other commercial spaces, tailored to your business needs.",
         "details": [
           "Office Cleaning",
           "Commercial Spaces",
+          "Recurring Service",
+          "Washrooms & Kitchen",
           "Post-Renovation Cleaning"
         ]
       },
       {
         "title": "Airbnb & Holiday Rentals",
-        "description": "Turnover cleaning to prepare your property for the next guests, with linen change and property reset available.",
+        "description": "Turnover cleaning between guest stays and preparation of the property for the next booking.",
         "details": [
           "Turnover Cleaning",
-          "Linen Change",
-          "Guest Preparation"
+          "Linen Change by agreement",
+          "Kitchen & Bathroom",
+          "Guest-ready Preparation",
+          "Waste Removal"
         ]
       },
       {
-        "title": "Move In / Move Out",
-        "description": "Thorough cleaning before you move in or after you move out, helping prepare the property for its next stage.",
+        "title": "Move-In / Move-Out Cleaning",
+        "description": "Detailed cleaning before moving in or after moving out, helping prepare the property for handover or new occupants.",
         "details": [
-          "Full Property Cleaning",
+          "Full Property Clean",
           "Kitchen & Bathrooms",
+          "Cupboards & Accessible Surfaces",
+          "Floors & Skirting Boards",
           "Flexible Scope"
         ]
       },
       {
         "title": "Upholstery & Carpet Cleaning",
-        "description": "Deep cleaning for sofas, upholstered furniture and carpets, tailored to the material and condition.",
+        "description": "Deep cleaning for sofas, upholstered furniture and carpets, based on material, staining and overall condition.",
         "details": [
-          "Carpet Cleaning",
           "Sofa Cleaning",
-          "Upholstery Cleaning"
+          "Upholstered Furniture",
+          "Carpets",
+          "Localised Stains",
+          "Condition Assessment"
         ]
       },
       {
-        "title": "Specialty Cleaning",
-        "description": "Focused cleaning for ovens, refrigerators, windows and car interiors, available as standalone services.",
+        "title": "Specialized Cleaning",
+        "description": "Individual services for ovens, refrigerators, windows and car interiors without booking a full property clean.",
         "details": [
           "Oven & Refrigerator",
           "Window Cleaning",
-          "Car Interior Cleaning"
+          "Car Interior Cleaning",
+          "Other Areas by Agreement"
         ]
       }
     ]
   },
   "benefits": {
     "eyebrow": "The Blue Wave approach",
-    "title": "Professional service, clear from the start",
+    "title": "Cleaning you can trust",
     "items": [
       {
-        "title": "Reliable Service",
-        "body": "Clear communication and an attentive approach from your first enquiry to completion."
+        "title": "Reliable",
+        "body": "Clear communication and a considered approach from enquiry to completion."
       },
       {
-        "title": "Professional Approach",
-        "body": "We respect your property and agree the scope of work before the service begins."
+        "title": "Professional",
+        "body": "Respectful service shaped around your property and priorities."
       },
       {
-        "title": "Attention to Detail",
-        "body": "We focus on the areas and surfaces that make the biggest difference to how your space feels."
+        "title": "High-Quality Cleaning",
+        "body": "Careful attention to the surfaces and details that make a room feel renewed."
       },
       {
-        "title": "Products & Equipment",
-        "body": "We arrive with the professional cleaning products and equipment required for the agreed service."
+        "title": "Eco-Friendly Products",
+        "body": "Product preferences can be discussed when your booking is confirmed."
       },
       {
-        "title": "Clear Pricing",
-        "body": "Starting prices are shown on the website, with the final price confirmed after we understand the scope."
+        "title": "Transparent Pricing",
+        "body": "Straightforward starting prices, with scope confirmed before work begins."
       },
       {
-        "title": "Your Priorities",
-        "body": "Tell us about allergies, pets, sensitive surfaces or special requests when you make your enquiry."
+        "title": "Customer Satisfaction",
+        "body": "Your needs guide the brief, with room to share any priorities in advance."
       }
     ]
   },
   "pricing": {
     "eyebrow": "Clear starting prices",
     "title": "A service for your space",
-    "body": "Browse our starting prices below. The final price is confirmed after we review the property size, condition and required scope of work.",
+    "body": "Choose a category to explore guide prices. We confirm the final scope with you before booking.",
     "categories": {
       "all": "All",
       "general": "General",
@@ -167,8 +178,8 @@
       "fullWindows": "for full-property window cleaning",
       "fullCarpet": "for a complete property service"
     },
-    "disclaimer": "Prices shown are starting prices. Final cost depends on property size, condition, access and the agreed scope of work.",
-    "details": "Tell us about your property and the service you need so we can confirm the appropriate scope and price."
+    "disclaimer": "Final price may depend on property size, condition, access and scope of work.",
+    "details": "Price shown is a guide. Tell us about your property for an accurate quote."
   },
   "steps": {
     "eyebrow": "Simple from the start",
@@ -183,15 +194,15 @@
   "about": {
     "eyebrow": "Meet Blue Wave Cleaning",
     "title": "More time for what matters",
-    "p1": "A clean, well-cared-for space should make everyday life easier. Blue Wave Cleaning provides practical, professional cleaning without unnecessary complications.",
-    "p2": "We work with homes, offices and holiday rentals across Paphos, Limassol and surrounding areas.",
-    "p3": "We pay attention to the details, respect your space and agree the scope of work in advance so you know what to expect.",
+    "p1": "At Blue Wave Cleaning, we believe a clean space gives you more time for the things that matter.",
+    "p2": "We provide professional cleaning services for homes, offices and vacation properties across Paphos, Limassol and surrounding areas.",
+    "p3": "Our approach is simple: reliable service, attention to detail and beautiful results.",
     "imageAlt": "Bright, carefully maintained modern living space"
   },
   "booking": {
     "eyebrow": "Booking request",
     "title": "Tell us about your space",
-    "intro": "Share the main details about your property and we’ll use them to understand the scope of work and prepare your request.",
+    "intro": "Share a few details and we’ll contact you to confirm the scope and price.",
     "steps": [
       "Service",
       "Property",
@@ -202,16 +213,15 @@
     "services": [
       "Regular Cleaning",
       "Deep Cleaning",
-      "Post-Renovation Cleaning",
+      "Post-Renovation",
       "Office Cleaning",
       "Airbnb Turnover",
       "Move In / Move Out",
       "Carpet Cleaning",
-      "Sofa / Upholstery Cleaning",
+      "Sofa Cleaning",
       "Window Cleaning",
       "Oven Cleaning",
       "Refrigerator Cleaning",
-      "Car Interior Cleaning",
       "Other"
     ],
     "city": "City",
@@ -242,7 +252,7 @@
     ],
     "notes": "Additional details",
     "notesPlaceholder": "Access, priorities, property condition or anything else we should know…",
-    "photos": "Photos can be shared with us in WhatsApp if they help us assess the job.",
+    "photos": "Photo upload — coming soon",
     "submit": "Request booking",
     "required": "Please complete the required fields.",
     "invalidEmail": "Enter a valid email address.",
@@ -253,71 +263,59 @@
   "faq": {
     "eyebrow": "Good to know",
     "title": "Frequently asked questions",
-    "body": "Practical answers about our cleaning services in Paphos, Limassol and surrounding areas.",
     "items": [
       {
         "q": "What areas do you cover?",
-        "a": "We provide cleaning services in Paphos, Limassol and surrounding areas. Send us your location and we’ll confirm availability for your property."
+        "a": "We serve Paphos, Limassol and surrounding areas. Contact us with your location and we’ll confirm availability."
       },
       {
-        "q": "Do I need to provide cleaning products or equipment?",
-        "a": "No. Our team arrives with the professional cleaning products and equipment required for the agreed service. If you have allergies, pets, sensitive surfaces or specific product preferences, please tell us when you make your enquiry."
+        "q": "Do I need to provide cleaning supplies?",
+        "a": "Please tell us your preference when booking. We’ll confirm the products and equipment needed for your service."
       },
       {
-        "q": "How long does a cleaning service take?",
-        "a": "The time required depends on the property size, condition and scope of work. Once we receive your details, we can give you a more useful estimate."
+        "q": "How long does cleaning take?",
+        "a": "Timing depends on the property size, condition and service scope. We’ll provide a clearer estimate after reviewing your details."
       },
       {
         "q": "Can I book recurring cleaning?",
-        "a": "Yes. Regular cleaning can be arranged weekly, every two weeks or on another schedule, subject to availability and the needs of your property."
+        "a": "Recurring home and office cleaning can be requested. Frequency and availability are confirmed directly with you."
       },
       {
-        "q": "Do you clean Airbnb and holiday rental properties?",
-        "a": "Yes. We provide turnover cleaning for Airbnb and holiday rentals, including property preparation, trash removal, wet cleaning and linen change when agreed."
+        "q": "Do you clean Airbnb properties?",
+        "a": "Yes. Turnover services can include linen change, trash removal, wet cleaning and property preparation, depending on your brief."
       },
       {
-        "q": "Do you clean offices and commercial spaces?",
-        "a": "Yes. We provide one-off and regular cleaning for offices and commercial spaces in Paphos, Limassol and surrounding areas. The scope is arranged around the size and needs of the property."
+        "q": "Can I book oven or refrigerator cleaning separately?",
+        "a": "Yes, both can be requested as standalone specialty services or together as the Kitchen Essentials bundle."
       },
       {
-        "q": "Do you offer move-in and move-out cleaning?",
-        "a": "Yes. We clean apartments, houses and rental properties before move-in or after move-out, helping prepare the space for handover or the next occupants."
-      },
-      {
-        "q": "Do you provide post-renovation cleaning?",
-        "a": "Yes. We provide post-renovation cleaning for apartments, houses and other properties. The scope and final price depend on the size and condition of the space after the work is completed."
-      },
-      {
-        "q": "Do you clean sofas, upholstery and carpets?",
-        "a": "Yes. We provide deep cleaning for sofas, upholstered furniture and carpets. The appropriate method and price depend on the size, material and condition."
-      },
-      {
-        "q": "Do you provide car interior cleaning?",
-        "a": "Yes. We clean car interiors, including seats, carpets, floor areas and other interior surfaces depending on the vehicle and its condition. Exterior car washing is not included."
-      },
-      {
-        "q": "Can I book oven, refrigerator or window cleaning separately?",
-        "a": "Yes. These specialty services can be booked separately without a full property clean. Oven and refrigerator cleaning can also be booked together as the Kitchen Essentials bundle."
+        "q": "Do you provide office cleaning?",
+        "a": "Yes. We clean offices and commercial spaces, with the scope arranged around the property’s needs."
       },
       {
         "q": "How is the final price calculated?",
-        "a": "Prices on the website are starting prices. The final price depends on the property size, condition, access and agreed scope of work, and is confirmed after we review the details."
+        "a": "The final price may depend on property size, condition, access and scope. We confirm it before work begins."
       },
       {
-        "q": "Can I send my request through WhatsApp?",
-        "a": "Yes. You can use the booking form or contact us directly on WhatsApp. We’ll review your details and contact you to confirm the service and final arrangements."
+        "q": "Can I book through WhatsApp?",
+        "a": "Yes. You can message us on WhatsApp, or use the booking form to send a structured request."
+      },
+      {
+        "q": "Do you offer move-in / move-out cleaning?",
+        "a": "Yes. Tell us about the property and your handover needs so we can recommend an appropriate scope."
       }
-    ]
+    ],
+    "body": "Answers to common questions about our cleaning services. If you do not find what you need, contact us and we will be happy to help."
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Get in touch with Blue Wave Cleaning",
-    "body": "Need cleaning or want to check the price for your property? Call us, message us or send your request through WhatsApp.",
+    "body": "We are here to help. Choose the most convenient way to contact us.",
     "phone": "Phone",
     "email": "Email",
     "whatsapp": "WhatsApp",
     "areas": "Service areas",
-    "socials": "",
+    "socials": "Social links coming soon",
     "whatsappAction": "Message us on WhatsApp",
     "areasValue": "Paphos · Limassol · surroundings",
     "mapTitle": "Blue Wave Cleaning service areas map"
@@ -325,14 +323,14 @@
   "forms": {
     "quick": {
       "title": "Quick Booking",
-      "intro": "Enter your contact details and continue to WhatsApp to send your request.",
+      "intro": "Leave your details and continue directly in WhatsApp.",
       "name": "Name",
       "phone": "Phone number",
-      "email": "Email",
+      "email": "Email (optional)",
       "namePlaceholder": "Your name",
       "phonePlaceholder": "+357",
       "emailPlaceholder": "you@example.com",
-      "submit": "Continue to WhatsApp",
+      "submit": "Book now",
       "required": "Please enter your name and phone number.",
       "invalidEmail": "Enter a valid email address.",
       "message": {
@@ -343,7 +341,7 @@
     },
     "quote": {
       "title": "Calculate the Price",
-      "intro": "Enter the main property details so we can understand the scope and prepare your quote request.",
+      "intro": "Tell us about the property and receive a tailored estimate from our team.",
       "service": "Service",
       "city": "City",
       "propertyType": "Property type",
@@ -353,16 +351,15 @@
       "services": [
         "Regular Cleaning",
         "Deep Cleaning",
-        "Post-Renovation Cleaning",
+        "Post-Renovation",
         "Office Cleaning",
         "Airbnb Turnover",
         "Move In / Move Out",
         "Carpet Cleaning",
-        "Sofa / Upholstery Cleaning",
+        "Sofa Cleaning",
         "Window Cleaning",
         "Oven Cleaning",
         "Refrigerator Cleaning",
-        "Car Interior Cleaning",
         "Other"
       ],
       "cities": [
@@ -386,14 +383,14 @@
       "message": {
         "greeting": "Hello Blue Wave Cleaning,",
         "intro": "I would like to request a cleaning quote.",
-        "closing": "Please contact me to confirm the details and final price."
+        "closing": "Please contact me with an estimated price."
       }
     }
   },
   "gallery": {
     "eyebrow": "Spaces we care for",
     "title": "Our Work",
-    "body": "Before-and-after results from homes and properties we care for.",
+    "body": "A closer look at the spaces we have transformed.",
     "viewAll": "View all work",
     "open": "Open image",
     "lightbox": "Gallery image viewer",
@@ -418,7 +415,7 @@
     }
   },
   "social": {
-    "follow": "Blue Wave Cleaning on social media"
+    "follow": "Follow Blue Wave Cleaning"
   },
   "legal": {
     "privacy": "Privacy Policy",
@@ -449,97 +446,5 @@
     "rights": "All rights reserved.",
     "surrounding": "Surrounding areas",
     "credit": "Website by MiDiVa Digital Agency"
-  },
-  "serviceDetails": {
-    "home-cleaning": {
-      "title": "Home Cleaning",
-      "description": "Regular home cleaning for apartments, houses and villas, tailored to the size and priorities of your property.",
-      "details": [
-        "Regular cleaning",
-        "Kitchen and bathroom care",
-        "Dusting and floor cleaning"
-      ]
-    },
-    "deep-cleaning": {
-      "title": "Deep Cleaning",
-      "description": "A more detailed clean for homes that need extra attention, with the scope agreed around the condition of the property.",
-      "details": [
-        "Detailed kitchen cleaning",
-        "Bathrooms and high-touch areas",
-        "Focused cleaning of built-up dirt"
-      ]
-    },
-    "office-cleaning": {
-      "title": "Office Cleaning",
-      "description": "One-off or regular cleaning for offices and commercial spaces in Paphos, Limassol and surrounding areas.",
-      "details": [
-        "Workspaces and common areas",
-        "Floors and surfaces",
-        "Flexible regular schedules"
-      ]
-    },
-    "airbnb-cleaning": {
-      "title": "Airbnb & Holiday Rental Cleaning",
-      "description": "Turnover cleaning to prepare your property for the next guests, with linen change available when agreed.",
-      "details": [
-        "Turnover cleaning",
-        "Trash removal and wet cleaning",
-        "Guest-ready preparation"
-      ]
-    },
-    "move-in-out-cleaning": {
-      "title": "Move In / Move Out Cleaning",
-      "description": "Thorough cleaning before move-in or after move-out to prepare a property for handover or new occupants.",
-      "details": [
-        "Full property cleaning",
-        "Kitchen and bathroom focus",
-        "Flexible scope for handover"
-      ]
-    },
-    "post-renovation-cleaning": {
-      "title": "Post-Renovation Cleaning",
-      "description": "Detailed cleaning after renovation work to remove dust and residue and prepare the property for use.",
-      "details": [
-        "Post-work dust removal",
-        "Detailed surface cleaning",
-        "Final property reset"
-      ]
-    },
-    "carpet-cleaning": {
-      "title": "Carpet Cleaning",
-      "description": "Deep cleaning for carpets, with the method and price based on size, material and condition.",
-      "details": [
-        "Room-based carpet cleaning",
-        "Whole-property service available",
-        "Assessment based on material and condition"
-      ]
-    },
-    "upholstery-cleaning": {
-      "title": "Upholstery & Sofa Cleaning",
-      "description": "Deep cleaning for sofas and upholstered furniture, tailored to the material and condition.",
-      "details": [
-        "Sofa cleaning",
-        "Upholstery cleaning",
-        "Targeted stain and surface care"
-      ]
-    },
-    "window-cleaning": {
-      "title": "Window Cleaning",
-      "description": "Window cleaning available either for selected individual windows or as a full-property service.",
-      "details": [
-        "Selected windows from €5 each",
-        "Full-property service from €45",
-        "Scope confirmed before service"
-      ]
-    },
-    "car-interior-cleaning": {
-      "title": "Car Interior Cleaning",
-      "description": "Interior cleaning for seats, carpets, floor areas and other interior surfaces. Exterior car washing is not included.",
-      "details": [
-        "Seats and interior surfaces",
-        "Carpets, mats and floor areas",
-        "Exterior wash not included"
-      ]
-    }
   }
 }

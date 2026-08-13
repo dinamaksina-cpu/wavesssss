@@ -8,7 +8,7 @@ export const serviceSlugs = [
   "carpet-cleaning",
   "upholstery-cleaning",
   "window-cleaning",
-  "car-interior-cleaning",
+  "specialized-cleaning",
 ] as const;
 
 export type ServiceSlug = (typeof serviceSlugs)[number];

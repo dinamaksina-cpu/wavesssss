@@ -4,7 +4,7 @@ import type { Dictionary, Locale } from "@/lib/i18n";
 import { SectionHeading } from "./SectionHeading";
 
 const icons = [Home, Building2, KeyRound, Truck, Sofa, Sparkles];
-const cardSlugs = ["home-cleaning", "office-cleaning", "airbnb-cleaning", "move-in-out-cleaning", "upholstery-cleaning", "window-cleaning"] as const;
+const cardSlugs = ["home-cleaning", "office-cleaning", "airbnb-cleaning", "move-in-out-cleaning", "upholstery-cleaning", "specialized-cleaning"] as const;
 
 export function ServicesGrid({ locale, dict, compact = false, showHeading = true }: { locale: Locale; dict: Dictionary; compact?: boolean; showHeading?: boolean }) {
   const items = compact ? dict.services.items.slice(0, 3) : dict.services.items;

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { company } from "@/data/company";
 import { serviceSlugs, type ServiceSlug } from "@/data/services";
+import { getServiceDetailCopy, serviceCategoryBySlug, serviceImageByCategory } from "@/lib/service-detail-i18n";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { Hero } from "./Hero";
 import { ServicesGrid } from "./ServicesGrid";
@@ -42,8 +43,9 @@ export function ContactPage({ locale, dict }: { locale: Locale; dict: Dictionary
 
 export function ServiceDetailPage({ locale, dict, slug }: { locale: Locale; dict: Dictionary; slug: ServiceSlug }) {
   const index = Math.max(0, serviceSlugs.indexOf(slug));
-  const item = dict.serviceDetails[slug];
-  return <><PageHero eyebrow={dict.common.eyebrow} title={item.title} body={item.description} /><section className="section service-detail"><div className="container service-detail-grid"><div><p className="eyebrow">0{index + 1} · {dict.services.eyebrow}</p><h2>{item.title}</h2><p>{item.description}</p><ul>{item.details.map(detail => <li key={detail}>{detail}</li>)}</ul></div><aside><h3>{dict.contact.title}</h3><p>{dict.pricing.disclaimer}</p><Link href={`/${locale}/booking`} className="button">{dict.common.quote}</Link><a href={company.whatsapp} target="_blank" rel="noreferrer">{dict.common.whatsapp}<ArrowUpRight size={15} /></a></aside></div></section><ServicesGrid locale={locale} dict={dict} compact /><ContactCTA locale={locale} dict={dict} /></>;
+  const copy = getServiceDetailCopy(locale, slug);
+  const image = serviceImageByCategory[serviceCategoryBySlug[slug]];
+  return <><PageHero eyebrow={dict.common.eyebrow} title={copy.title} body={copy.intro} /><section className="section service-detail"><div className="container"><div className="service-detail-image"><Image src={image} alt={copy.title} fill sizes="(max-width: 760px) 100vw, 1240px" unoptimized /></div><div className="service-detail-grid"><div className="service-detail-copy"><p className="eyebrow">0{index + 1} · {dict.services.eyebrow}</p><h2>{copy.includedTitle}</h2><ul>{copy.included.map(detail => <li key={detail}>{detail}</li>)}</ul><div className="service-detail-section"><h3>{copy.audienceTitle}</h3><p>{copy.audience}</p></div>{copy.note && <div className="service-detail-section"><h3>{copy.noteTitle}</h3><p>{copy.note}</p></div>}</div><aside><h3>{copy.priceTitle}</h3><ul className="service-price-list">{copy.priceLines.map(line => <li key={line}>{line}</li>)}</ul><p>{copy.priceNote}</p><Link href={`/${locale}/booking`} className="button">{dict.common.quote}</Link><a href={company.whatsapp} target="_blank" rel="noreferrer">{dict.common.whatsapp}<ArrowUpRight size={15} /></a></aside></div></div></section><ServicesGrid locale={locale} dict={dict} compact /><ContactCTA locale={locale} dict={dict} /></>;
 }
 
 export function LegalPage({ kind, dict }: { kind: "privacy" | "cookies" | "terms"; dict: Dictionary }) {
