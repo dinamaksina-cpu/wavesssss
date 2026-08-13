@@ -42,8 +42,7 @@ export function ContactPage({ locale, dict }: { locale: Locale; dict: Dictionary
 
 export function ServiceDetailPage({ locale, dict, slug }: { locale: Locale; dict: Dictionary; slug: ServiceSlug }) {
   const index = Math.max(0, serviceSlugs.indexOf(slug));
-  const sourceIndex: Record<ServiceSlug, number> = { "home-cleaning": 0, "deep-cleaning": 0, "office-cleaning": 1, "airbnb-cleaning": 2, "move-in-out-cleaning": 3, "post-renovation-cleaning": 1, "carpet-cleaning": 4, "upholstery-cleaning": 4, "window-cleaning": 5 };
-  const item = dict.services.items[sourceIndex[slug]];
+  const item = dict.serviceDetails[slug];
   return <><PageHero eyebrow={dict.common.eyebrow} title={item.title} body={item.description} /><section className="section service-detail"><div className="container service-detail-grid"><div><p className="eyebrow">0{index + 1} · {dict.services.eyebrow}</p><h2>{item.title}</h2><p>{item.description}</p><ul>{item.details.map(detail => <li key={detail}>{detail}</li>)}</ul></div><aside><h3>{dict.contact.title}</h3><p>{dict.pricing.disclaimer}</p><Link href={`/${locale}/booking`} className="button">{dict.common.quote}</Link><a href={company.whatsapp} target="_blank" rel="noreferrer">{dict.common.whatsapp}<ArrowUpRight size={15} /></a></aside></div></section><ServicesGrid locale={locale} dict={dict} compact /><ContactCTA locale={locale} dict={dict} /></>;
 }
 
