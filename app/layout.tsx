@@ -6,10 +6,13 @@ const manrope = Manrope({ subsets: ["latin", "cyrillic", "greek"], variable: "--
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bluewavecleaning.org"),
-  title: { default: "Blue Wave Cleaning | Cleaning Services Cyprus", template: "%s | Blue Wave Cleaning" },
-  description: "Professional home, office and vacation rental cleaning in Paphos, Limassol and surrounding areas.",
-  icons: { icon: "/blue-wave-logo.png", shortcut: "/blue-wave-logo.png" },
+  title: { default: "Blue Wave Cleaning | Professional Cleaning in Paphos & Limassol", template: "%s | Blue Wave Cleaning" },
+  description: "Professional home, office, Airbnb and specialized cleaning in Paphos, Limassol and surrounding areas, Cyprus.",
+  applicationName:"Blue Wave Cleaning",
+  category:"Cleaning Services",
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/blue-wave-logo.png" },
   formatDetection: { telephone: false },
+  verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
