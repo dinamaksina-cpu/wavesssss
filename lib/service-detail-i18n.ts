@@ -31,12 +31,12 @@ export const serviceCategoryBySlug: Record<ServiceSlug, Category> = {
 };
 
 export const serviceImageByCategory: Record<Category, string> = {
-  home: "/images/gallery/living-room-before-after.png",
-  office: "/hero-interior.png",
-  airbnb: "/images/gallery/airbnb-bedroom-before-after.png",
-  move: "/images/gallery/bedroom-before-after.png",
-  upholstery: "/images/gallery/sofa-carpet-before-after.png",
-  specialized: "/images/gallery/kitchen-before-after.png",
+  home: "/images/services/home-cleaning.png",
+  office: "/images/services/office-cleaning.png",
+  airbnb: "/images/services/airbnb-cleaning.png",
+  move: "/images/services/move-in-out-cleaning.png",
+  upholstery: "/images/services/upholstery-carpet-cleaning.png",
+  specialized: "/images/services/specialized-cleaning.png",
   renovation: "/images/gallery/bathroom-before-after.png",
 };
 
