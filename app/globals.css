@@ -94,16 +94,216 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
 .service-price-list li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--navy)!important;font-weight:650}
 @media(max-width:760px){.service-detail-image{margin-bottom:34px}.service-detail-copy>ul{grid-template-columns:1fr}.service-detail-copy h2{font-size:32px}}
 
-/* Blue Wave opening animation — isolated from site layout */
-.intro-loader-water{position:fixed;z-index:200;inset:0;display:grid;place-items:center;overflow:hidden;background:#fff}
-.intro-loader-logo-wrap{position:relative;z-index:3;width:210px;height:185px;display:grid;place-items:center;overflow:hidden}
-.intro-loader-water .intro-logo{width:196px;height:196px;object-fit:contain;transform:scale(1.5)}
-.intro-water-glow{position:absolute;left:50%;top:58%;width:min(520px,80vw);height:180px;transform:translate(-50%,-50%);background:radial-gradient(ellipse at center,rgba(32,184,203,.16),rgba(32,184,203,0) 70%);filter:blur(20px);pointer-events:none}
-.intro-water-line{position:absolute;left:-18%;width:136%;height:70px;border-radius:50%;border-top:2px solid rgba(32,184,203,.36);pointer-events:none;will-change:transform}
-.intro-water-line-one{top:64%;animation:blueWaveDriftA 1.8s ease-in-out infinite alternate}
-.intro-water-line-two{top:68%;border-top-color:rgba(8,125,168,.22);animation:blueWaveDriftB 2.1s ease-in-out infinite alternate}
-.intro-water-line-three{top:72%;border-top-color:rgba(188,239,243,.72);animation:blueWaveDriftA 2.4s ease-in-out infinite alternate-reverse}
-@keyframes blueWaveDriftA{from{transform:translate3d(-3%,0,0) scaleY(.92)}to{transform:translate3d(3%,-6px,0) scaleY(1.08)}}
-@keyframes blueWaveDriftB{from{transform:translate3d(4%,0,0) scaleY(1.06)}to{transform:translate3d(-4%,5px,0) scaleY(.94)}}
-@media(max-width:760px){.intro-loader-logo-wrap{width:190px;height:170px}.intro-loader-water .intro-logo{width:180px;height:180px}.intro-water-line-one{top:62%}.intro-water-line-two{top:67%}.intro-water-line-three{top:72%}}
-@media(prefers-reduced-motion:reduce){.intro-water-line{animation:none!important}}
+/* Blue Wave motion system v4 — animation only, no layout changes */
+.intro-loader-wave{
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(32,184,203,.09), transparent 32%),
+    #fff;
+}
+.intro-loader-wave .intro-wave-mark{
+  position:relative;
+  z-index:3;
+  width:210px;
+  height:180px;
+  display:grid;
+  place-items:center;
+}
+.intro-loader-wave .intro-logo{
+  width:196px;
+  height:196px;
+  object-fit:contain;
+  transform:scale(1.52);
+  position:relative;
+  z-index:3;
+}
+.intro-water-lines{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.68;
+}
+.intro-water-lines span{
+  position:absolute;
+  left:-18%;
+  width:136%;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(32,184,203,.22),rgba(8,125,168,.12),transparent);
+  transform-origin:center;
+  animation:bwWaterLine 2.8s ease-in-out infinite alternate;
+}
+.intro-water-lines span:nth-child(1){top:38%;animation-delay:-.4s}
+.intro-water-lines span:nth-child(2){top:50%;animation-delay:-1.1s}
+.intro-water-lines span:nth-child(3){top:62%;animation-delay:-1.8s}
+.intro-ripple{
+  position:absolute;
+  left:50%;
+  top:53%;
+  width:122px;
+  height:28px;
+  border:1px solid rgba(32,184,203,.24);
+  border-radius:50%;
+  transform:translate(-50%,-50%) scale(.55);
+  opacity:0;
+  animation:bwRipple 1.65s ease-out .35s infinite;
+}
+.intro-ripple-two{animation-delay:.8s}
+.intro-water-wipe{
+  position:absolute;
+  z-index:2;
+  left:0;
+  right:0;
+  bottom:0;
+  height:3px;
+  transform-origin:left center;
+  background:linear-gradient(90deg,transparent 0%,var(--aqua) 18%,#79dce6 52%,var(--blue) 82%,transparent 100%);
+  box-shadow:0 -14px 42px rgba(32,184,203,.14);
+}
+@keyframes bwWaterLine{
+  from{transform:translateX(-3%) scaleX(.94);opacity:.35}
+  to{transform:translateX(3%) scaleX(1.04);opacity:.8}
+}
+@keyframes bwRipple{
+  0%{transform:translate(-50%,-50%) scale(.52);opacity:0}
+  18%{opacity:.55}
+  100%{transform:translate(-50%,-50%) scale(2.35);opacity:0}
+}
+
+/* Hero: reveal copy only. The hero image never moves. */
+.bw-motion-ready .hero .eyebrow,
+.bw-motion-ready .hero h1,
+.bw-motion-ready .hero .hero-copy,
+.bw-motion-ready .hero .hero-actions,
+.bw-motion-ready .hero .hero-areas,
+.bw-motion-ready .hero .hero-trust{
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .7s ease,transform .8s cubic-bezier(.22,1,.36,1);
+}
+.bw-motion-ready .hero.bw-hero-ready .eyebrow{opacity:1;transform:none;transition-delay:.05s}
+.bw-motion-ready .hero.bw-hero-ready h1{opacity:1;transform:none;transition-delay:.13s}
+.bw-motion-ready .hero.bw-hero-ready .hero-copy{opacity:1;transform:none;transition-delay:.22s}
+.bw-motion-ready .hero.bw-hero-ready .hero-actions{opacity:1;transform:none;transition-delay:.30s}
+.bw-motion-ready .hero.bw-hero-ready .hero-areas{opacity:1;transform:none;transition-delay:.37s}
+.bw-motion-ready .hero.bw-hero-ready .hero-trust{opacity:1;transform:none;transition-delay:.42s}
+.hero::after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(112deg,transparent 0%,transparent 42%,rgba(188,239,243,.10) 49%,transparent 56%,transparent 100%);
+  background-size:230% 100%;
+  background-position:140% 0;
+  animation:bwHeroLight 11s linear infinite;
+}
+@keyframes bwHeroLight{to{background-position:-140% 0}}
+
+/* Scroll reveals use opacity + clip-path only, so grids and spacing stay untouched. */
+.bw-motion-ready .bw-reveal{
+  opacity:0;
+  clip-path:inset(7% 0 7% 0 round 18px);
+  transition:
+    opacity .72s ease var(--bw-delay,0ms),
+    clip-path .9s cubic-bezier(.22,1,.36,1) var(--bw-delay,0ms);
+}
+.bw-motion-ready .bw-reveal.bw-revealed{
+  opacity:1;
+  clip-path:inset(0 0 0 0 round 0);
+}
+
+/* Cards get a water-light pass without changing their dimensions. */
+.service-card,
+.contact-card,
+.benefit-grid article,
+.booking-card{
+  overflow:hidden;
+}
+.service-card::after,
+.contact-card::after,
+.benefit-grid article::after,
+.booking-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:0;
+  background:linear-gradient(115deg,transparent 20%,rgba(32,184,203,.055) 47%,rgba(255,255,255,.72) 50%,rgba(32,184,203,.045) 53%,transparent 80%);
+  transform:translateX(-115%);
+  transition:opacity .25s ease;
+}
+.service-card:hover::after,
+.contact-card:hover::after,
+.booking-card:hover::after{
+  opacity:1;
+  animation:bwCardSheen .9s ease-out;
+}
+@keyframes bwCardSheen{to{transform:translateX(115%)}}
+
+/* Section headings receive a subtle Blue Wave accent after reveal. */
+.section-heading h2{position:relative}
+.section-heading h2::after{
+  content:"";
+  display:block;
+  width:0;
+  height:2px;
+  margin-top:18px;
+  background:linear-gradient(90deg,var(--aqua),rgba(32,184,203,0));
+  transition:width .9s cubic-bezier(.22,1,.36,1) .18s;
+}
+.bw-revealed.section-heading h2::after{width:min(132px,28vw)}
+
+/* Gallery receives a soft water sheen while preserving existing hover behavior. */
+.gallery-item::before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  inset:0;
+  pointer-events:none;
+  opacity:0;
+  background:linear-gradient(120deg,transparent 25%,rgba(210,248,251,.22) 48%,transparent 67%);
+  transform:translateX(-120%);
+}
+.gallery-item.bw-revealed::before{
+  animation:bwGalleryWash 1.05s ease-out .12s both;
+}
+@keyframes bwGalleryWash{
+  0%{opacity:0;transform:translateX(-120%)}
+  20%{opacity:1}
+  100%{opacity:0;transform:translateX(120%)}
+}
+
+@media(max-width:760px){
+  .bw-motion-ready .hero .eyebrow,
+  .bw-motion-ready .hero h1,
+  .bw-motion-ready .hero .hero-copy,
+  .bw-motion-ready .hero .hero-actions,
+  .bw-motion-ready .hero .hero-areas,
+  .bw-motion-ready .hero .hero-trust{
+    transform:translateY(9px);
+  }
+  .intro-loader-wave .intro-wave-mark{width:180px;height:160px}
+  .intro-loader-wave .intro-logo{width:174px;height:174px}
+  .hero::after{animation-duration:14s}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .intro-water-lines span,
+  .intro-ripple,
+  .hero::after,
+  .gallery-item.bw-revealed::before{
+    animation:none!important;
+  }
+  .bw-motion-ready .bw-reveal,
+  .bw-motion-ready .hero .eyebrow,
+  .bw-motion-ready .hero h1,
+  .bw-motion-ready .hero .hero-copy,
+  .bw-motion-ready .hero .hero-actions,
+  .bw-motion-ready .hero .hero-areas,
+  .bw-motion-ready .hero .hero-trust{
+    opacity:1!important;
+    transform:none!important;
+    clip-path:none!important;
+    transition:none!important;
+  }
+}
