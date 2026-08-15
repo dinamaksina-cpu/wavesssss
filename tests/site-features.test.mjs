@@ -9,9 +9,26 @@ test("booking experience contains no calendar or time controls", async () => {
   assert.doesNotMatch(booking, /type=["'](?:date|time)["']/i);
   assert.match(booking, /QuickBooking/);
   assert.match(booking, /QuoteCalculator/);
-  assert.doesNotMatch(booking, /window\.open/);
-  assert.match(booking, /fetch\("\/api\/booking"/);
+  assert.match(booking, /window\.open\(whatsappUrl\(message\), "_blank", "noopener,noreferrer"\)/);
+  assert.match(booking, /https:\/\/wa\.me\/35797579867/);
+  assert.doesNotMatch(booking, /fetch\("\/api\/booking"/);
   assert.match(booking, /confirmEmail/);
+});
+
+test("site motion is mounted and respects reduced motion", async () => {
+  const [layout, motion, marquee, styles] = await Promise.all([
+    read("app/[locale]/layout.tsx"),
+    read("components/SiteMotion.tsx"),
+    read("components/MotionMarquee.tsx"),
+    read("app/globals.css"),
+  ]);
+  assert.match(layout, /<SiteMotion\s*\/>/);
+  assert.match(motion, /site-scroll-progress/);
+  assert.match(motion, /--parallax-shift/);
+  assert.match(motion, /--tilt-x/);
+  assert.match(motion, /prefers-reduced-motion: reduce/);
+  assert.match(marquee, /motion-marquee-track/);
+  assert.match(styles, /@media\(prefers-reduced-motion:reduce\)/);
 });
 
 test("booking API uses server-side Resend delivery and abuse controls", async () => {

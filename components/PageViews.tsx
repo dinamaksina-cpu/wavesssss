@@ -16,9 +16,10 @@ import { SectionHeading } from "./SectionHeading";
 import { BookingForm } from "./BookingForm";
 import { GallerySection } from "./Gallery";
 import { SocialLinks } from "./SocialLinks";
+import { MotionMarquee } from "./MotionMarquee";
 
 export function HomePage({ locale, dict }: { locale: Locale; dict: Dictionary }) {
-  return <><Hero locale={locale} dict={dict} /><ServicesGrid locale={locale} dict={dict} compact /><WhyChooseUs dict={dict} /><PricingTabs locale={locale} dict={dict} compact /><HowItWorks dict={dict} /><AboutBlock dict={dict} /><GallerySection locale={locale} dict={dict} preview /><FAQAccordion dict={dict} compact /><ContactCTA locale={locale} dict={dict} /></>;
+  return <><Hero locale={locale} dict={dict} /><MotionMarquee dict={dict} /><ServicesGrid locale={locale} dict={dict} compact /><WhyChooseUs dict={dict} /><PricingTabs locale={locale} dict={dict} compact /><HowItWorks dict={dict} /><AboutBlock dict={dict} /><GallerySection locale={locale} dict={dict} preview /><FAQAccordion dict={dict} compact /><ContactCTA locale={locale} dict={dict} /></>;
 }
 
 function PageHero({ eyebrow, title, body }: { eyebrow: string; title: string; body?: string }) {

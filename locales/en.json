@@ -266,43 +266,51 @@
     "items": [
       {
         "q": "What areas do you cover?",
-        "a": "We serve Paphos, Limassol and surrounding areas. Contact us with your location and we’ll confirm availability."
+        "a": "We currently serve Paphos, Limassol and surrounding areas. Send us the property location when booking and we will confirm availability and any travel conditions before the service."
       },
       {
-        "q": "Do I need to provide cleaning supplies?",
-        "a": "Please tell us your preference when booking. We’ll confirm the products and equipment needed for your service."
+        "q": "Do I need to provide cleaning products or equipment?",
+        "a": "Usually we agree this with you in advance. Depending on the service, our team can arrive with the required professional products and equipment. If you prefer specific products to be used in your home or property, tell us when booking."
       },
       {
-        "q": "How long does cleaning take?",
-        "a": "Timing depends on the property size, condition and service scope. We’ll provide a clearer estimate after reviewing your details."
+        "q": "How long does a cleaning service take?",
+        "a": "Timing depends on the property size, current condition, number of rooms and the selected service. Deep cleaning, post-renovation cleaning and move-in / move-out work normally require more time than regular maintenance cleaning. We confirm a realistic estimate after reviewing the details."
       },
       {
-        "q": "Can I book recurring cleaning?",
-        "a": "Recurring home and office cleaning can be requested. Frequency and availability are confirmed directly with you."
+        "q": "Can I book recurring home or office cleaning?",
+        "a": "Yes. Regular home and office cleaning can be arranged weekly, fortnightly or on another agreed schedule, subject to availability. The scope and frequency are tailored to the property and your priorities."
       },
       {
-        "q": "Do you clean Airbnb properties?",
-        "a": "Yes. Turnover services can include linen change, trash removal, wet cleaning and property preparation, depending on your brief."
+        "q": "What is included in Airbnb / vacation rental turnover cleaning?",
+        "a": "Turnover cleaning can include linen and towel change, professional bed making, kitchen and appliance cleaning, bathroom disinfection, dusting, floor cleaning, rubbish removal, high-contact surface disinfection, restocking agreed guest essentials and a final readiness check before the next arrival."
+      },
+      {
+        "q": "Do you provide post-renovation cleaning?",
+        "a": "Yes. Post-renovation cleaning starts from €180. It can include construction dust removal, repeated floor and surface washing, removal of paint, sealant, grout, adhesive, mounting foam and protective-film residues where safe to do so. Bulky construction debris is discussed separately."
       },
       {
         "q": "Can I book oven or refrigerator cleaning separately?",
-        "a": "Yes, both can be requested as standalone specialty services or together as the Kitchen Essentials bundle."
+        "a": "Yes. Oven and refrigerator cleaning can be booked separately or together as the Kitchen Essentials Bundle for €30. The bundle combines deep cleaning of both appliances at a lower combined price."
       },
       {
-        "q": "Do you provide office cleaning?",
-        "a": "Yes. We clean offices and commercial spaces, with the scope arranged around the property’s needs."
+        "q": "Do you provide office and commercial cleaning?",
+        "a": "Yes. Office cleaning starts from €45 and can be arranged as a one-off service or on a regular schedule. We tailor the work to the size, usage and condition of the premises, including work areas, kitchens, washrooms, floors and high-contact surfaces."
       },
       {
         "q": "How is the final price calculated?",
-        "a": "The final price may depend on property size, condition, access and scope. We confirm it before work begins."
+        "a": "Displayed prices are starting prices. The final cost depends on the total area, property condition, level of dirt, access, requested extras and the scope of work. We confirm the price with you before the service begins."
       },
       {
         "q": "Can I book through WhatsApp?",
-        "a": "Yes. You can message us on WhatsApp, or use the booking form to send a structured request."
+        "a": "Yes. You can contact us directly on WhatsApp for a quick enquiry, or use the booking form to send the property type, location, preferred date and service details in one structured request."
       },
       {
         "q": "Do you offer move-in / move-out cleaning?",
-        "a": "Yes. Tell us about the property and your handover needs so we can recommend an appropriate scope."
+        "a": "Yes. We can prepare a property before moving in or clean it after moving out. The exact scope can include kitchens, bathrooms, wardrobes, accessible interior surfaces, floors, skirting boards and other agreed areas depending on the condition of the property."
+      },
+      {
+        "q": "What should I tell you before booking?",
+        "a": "Please share the property type, approximate size, location, preferred date, service required and any priority areas. For deep, post-renovation or move-out cleaning, photos are very helpful for estimating the scope and preparing the correct products and equipment."
       }
     ],
     "body": "Answers to common questions about our cleaning services. If you do not find what you need, contact us and we will be happy to help."
