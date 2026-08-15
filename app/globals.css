@@ -94,7 +94,7 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
 .service-price-list li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--navy)!important;font-weight:650}
 @media(max-width:760px){.service-detail-image{margin-bottom:34px}.service-detail-copy>ul{grid-template-columns:1fr}.service-detail-copy h2{font-size:32px}}
 
-/* Blue Wave motion system v4 — animation only, no layout changes */
+/* Blue Wave opening animation v5 — isolated from page layout. */
 .intro-loader-wave{
   overflow:hidden;
   background:
@@ -168,142 +168,10 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}b
   18%{opacity:.55}
   100%{transform:translate(-50%,-50%) scale(2.35);opacity:0}
 }
-
-/* Hero: reveal copy only. The hero image never moves. */
-.bw-motion-ready .hero .eyebrow,
-.bw-motion-ready .hero h1,
-.bw-motion-ready .hero .hero-copy,
-.bw-motion-ready .hero .hero-actions,
-.bw-motion-ready .hero .hero-areas,
-.bw-motion-ready .hero .hero-trust{
-  opacity:0;
-  transform:translateY(14px);
-  transition:opacity .7s ease,transform .8s cubic-bezier(.22,1,.36,1);
-}
-.bw-motion-ready .hero.bw-hero-ready .eyebrow{opacity:1;transform:none;transition-delay:.05s}
-.bw-motion-ready .hero.bw-hero-ready h1{opacity:1;transform:none;transition-delay:.13s}
-.bw-motion-ready .hero.bw-hero-ready .hero-copy{opacity:1;transform:none;transition-delay:.22s}
-.bw-motion-ready .hero.bw-hero-ready .hero-actions{opacity:1;transform:none;transition-delay:.30s}
-.bw-motion-ready .hero.bw-hero-ready .hero-areas{opacity:1;transform:none;transition-delay:.37s}
-.bw-motion-ready .hero.bw-hero-ready .hero-trust{opacity:1;transform:none;transition-delay:.42s}
-.hero::after{
-  content:"";
-  position:absolute;
-  z-index:1;
-  inset:0;
-  pointer-events:none;
-  background:linear-gradient(112deg,transparent 0%,transparent 42%,rgba(188,239,243,.10) 49%,transparent 56%,transparent 100%);
-  background-size:230% 100%;
-  background-position:140% 0;
-  animation:bwHeroLight 11s linear infinite;
-}
-@keyframes bwHeroLight{to{background-position:-140% 0}}
-
-/* Scroll reveals use opacity + clip-path only, so grids and spacing stay untouched. */
-.bw-motion-ready .bw-reveal{
-  opacity:0;
-  clip-path:inset(7% 0 7% 0 round 18px);
-  transition:
-    opacity .72s ease var(--bw-delay,0ms),
-    clip-path .9s cubic-bezier(.22,1,.36,1) var(--bw-delay,0ms);
-}
-.bw-motion-ready .bw-reveal.bw-revealed{
-  opacity:1;
-  clip-path:inset(0 0 0 0 round 0);
-}
-
-/* Cards get a water-light pass without changing their dimensions. */
-.service-card,
-.contact-card,
-.benefit-grid article,
-.booking-card{
-  overflow:hidden;
-}
-.service-card::after,
-.contact-card::after,
-.benefit-grid article::after,
-.booking-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  opacity:0;
-  background:linear-gradient(115deg,transparent 20%,rgba(32,184,203,.055) 47%,rgba(255,255,255,.72) 50%,rgba(32,184,203,.045) 53%,transparent 80%);
-  transform:translateX(-115%);
-  transition:opacity .25s ease;
-}
-.service-card:hover::after,
-.contact-card:hover::after,
-.booking-card:hover::after{
-  opacity:1;
-  animation:bwCardSheen .9s ease-out;
-}
-@keyframes bwCardSheen{to{transform:translateX(115%)}}
-
-/* Section headings receive a subtle Blue Wave accent after reveal. */
-.section-heading h2{position:relative}
-.section-heading h2::after{
-  content:"";
-  display:block;
-  width:0;
-  height:2px;
-  margin-top:18px;
-  background:linear-gradient(90deg,var(--aqua),rgba(32,184,203,0));
-  transition:width .9s cubic-bezier(.22,1,.36,1) .18s;
-}
-.bw-revealed.section-heading h2::after{width:min(132px,28vw)}
-
-/* Gallery receives a soft water sheen while preserving existing hover behavior. */
-.gallery-item::before{
-  content:"";
-  position:absolute;
-  z-index:2;
-  inset:0;
-  pointer-events:none;
-  opacity:0;
-  background:linear-gradient(120deg,transparent 25%,rgba(210,248,251,.22) 48%,transparent 67%);
-  transform:translateX(-120%);
-}
-.gallery-item.bw-revealed::before{
-  animation:bwGalleryWash 1.05s ease-out .12s both;
-}
-@keyframes bwGalleryWash{
-  0%{opacity:0;transform:translateX(-120%)}
-  20%{opacity:1}
-  100%{opacity:0;transform:translateX(120%)}
-}
-
 @media(max-width:760px){
-  .bw-motion-ready .hero .eyebrow,
-  .bw-motion-ready .hero h1,
-  .bw-motion-ready .hero .hero-copy,
-  .bw-motion-ready .hero .hero-actions,
-  .bw-motion-ready .hero .hero-areas,
-  .bw-motion-ready .hero .hero-trust{
-    transform:translateY(9px);
-  }
   .intro-loader-wave .intro-wave-mark{width:180px;height:160px}
   .intro-loader-wave .intro-logo{width:174px;height:174px}
-  .hero::after{animation-duration:14s}
 }
-
 @media(prefers-reduced-motion:reduce){
-  .intro-water-lines span,
-  .intro-ripple,
-  .hero::after,
-  .gallery-item.bw-revealed::before{
-    animation:none!important;
-  }
-  .bw-motion-ready .bw-reveal,
-  .bw-motion-ready .hero .eyebrow,
-  .bw-motion-ready .hero h1,
-  .bw-motion-ready .hero .hero-copy,
-  .bw-motion-ready .hero .hero-actions,
-  .bw-motion-ready .hero .hero-areas,
-  .bw-motion-ready .hero .hero-trust{
-    opacity:1!important;
-    transform:none!important;
-    clip-path:none!important;
-    transition:none!important;
-  }
+  .intro-water-lines span,.intro-ripple{animation:none!important}
 }

@@ -6,7 +6,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { IntroLoader } from "@/components/IntroLoader";
-import { SiteMotion } from "@/components/SiteMotion";
 
 export function generateStaticParams(){return locales.map(locale=>({locale}))}
 
@@ -39,5 +38,5 @@ export default async function LocaleLayout({children,params}:{children:React.Rea
       ].map(name=>({"@type":"Offer","itemOffered":{"@type":"Service","name":name,"areaServed":["Paphos","Limassol","Cyprus"]}}))
     }
   };
-  return <div lang={locale}><IntroLoader/><SiteMotion/><Header locale={locale} dict={dict}/><main>{children}</main><Footer locale={locale} dict={dict}/><FloatingContact locale={locale} dict={dict}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/></div>
+  return <div lang={locale}><IntroLoader/><Header locale={locale} dict={dict}/><main>{children}</main><Footer locale={locale} dict={dict}/><FloatingContact locale={locale} dict={dict}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/></div>
 }
